@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html> 
+    <link rel="stylesheet" href="style.css "
+    <head>
+    <title>Registration Form</title>
+</head>
+ <body> 
+     
+    <h2>User Registration</h2>
+    <form action="/register" method="post">
+        <label for="username1">Username:</label><br>
+        <input type="text" id="username1" name="username1" required><br><br>
+
+        <label for="email1">Email:</label><br>
+        <input type="email1" id="email" name="email1" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="confirm-password">Confirm Password:</label><br>
+        <input type="password" id="confirm-password" name="confirm_password" required><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob"><br><br>
+        
+        <label>Blood Group: </label> 
+        <select name="bg">
+               <option>A+</option>      
+               <option>A-</option>  
+               <option>B+</option>  
+               <option>B-</option>  
+               <option>O+</option>  
+               <option>O-</option>  
+               <option>AB+</option>  
+               <option>AB-</option>  
+            </selectb> <br> <br>
+
+
+        <label for="dept">Degree : </level>
+        <input type="checkbox" id="ssc" name="dept" value="ssc">SSC
+        <input type="checkbox" id="hsc" name="dept" value="hsc">HSC
+        <input type="checkbox" id="bsc" name="dept" value="bsc">BsC
+        <input type="checkbox" id="msc" name="dept" value="msc">MsC<br><br>
+
+        <label for="name" >Photo</label>
+        <input type="file" id="photo" name="photo" > <br><br>
+
+        <div class="form-group button-group">
+            <input type="submit" value="Submit">
+            <input type="submit" value="Reset">
+        </div>
+    
+        
+    </form>
+</body>
+</html>
