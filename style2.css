@@ -1,0 +1,51 @@
+body 
+{ 
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Helvetica, sans-serif;
+       background-color: brown;
+       margin: 0;
+       padding: 0;
+
+
+
+}
+h1 
+{
+  text-align: center;
+  margin-top: 30px;
+}
+
+form 
+{
+  background: white;
+  max-width: 800px;
+  max-height: 20000px;
+  margin: 30px auto;
+  padding: 30px;
+ 
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+ 
+
+textarea {
+  resize: vertical;
+}
+
+input[type="submit"],
+input[type="reset"] 
+{
+  background-color: #007BFF;
+  color: white;
+  padding: 12px 20px;
+
+  margin-right: 10px;
+}

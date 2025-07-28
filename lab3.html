@@ -1,0 +1,116 @@
+
+<html>
+<head>
+    <title>JS Example</title>
+</head>
+<body>
+        <h1>Login Page</h1>
+        <form method="post" action="abc.html" enctype="multipart/form-data" onsubmit="return loginCheck()">
+            <fieldset>
+            Username:   <input type="text" name="username" value="" id="username" onblur="checkUsername()" >
+                        <p id="uError"></p>
+            Password:   <input type="password" name="password" value="" id="password" onblur="checkPassword()" >
+                        <p id="pError"></p>
+                        <input type="submit" name="" value="Submit">
+                        <p id="success"></p>
+            </fieldset>
+        </form>
+
+        <script>
+            //name = "alamin";
+            //var name = "alamin";
+            let name = "alamin";
+            let cgpa = 4.00;
+            let id = 1234;
+            //let email = "alamin@aiub.edu";
+            let std = [1, 'alamin', 3.5, 'alamin@aiub.edu'];
+            let email = std[3];
+
+            function abc(a=0, b=0){
+                return a+b;
+            }
+            abc();
+            let f1 = function(a, b){
+                return a+b;
+            }
+            f1();
+            let f2 = (a,b)=>a+b;
+
+            for(let a=0; a<10; a++){
+
+            }
+
+            // if("10" == 10){
+
+            // }else if(){
+                
+            // }else{
+
+            // }
+
+            //console.log('testing form JS');
+            //alert('test');
+            //document.write('test from JS');
+
+            let username = "";
+            let password = "";
+            let uError = document.getElementById('uError');
+            let pError = document.getElementById('pError');
+
+            function checkUsername(){
+                username = document.getElementById('username').value;
+                if(username == ""){
+                    uError.innerHTML = "please type username first!"
+                    uError.style.color = 'red';     
+                }else{
+                    uError.innerHTML = "";
+                }
+            }
+
+            function checkPassword(){
+                password = document.getElementById('password').value;
+                if(password == ""){
+                    pError.innerHTML = "please type password first!"
+                    pError.style.color = 'red';
+                }else{
+                    pError.innerHTML = "";
+                }
+            }
+
+            function loginCheck(){
+                if(username != "" && password != ""){
+                    if(username == password){
+                        alert('valid user!')
+                        return true;
+                    }else{
+                        //alert('invalid user!');
+                        let successMsg = document.getElementById('success');
+                        successMsg.innerHTML = "please type valid username or password!";
+                        successMsg.style.color = 'red';
+                        
+                        return false
+                    }
+                }else{
+                    checkPassword();
+                    checkUsername();
+                    return false;
+                }
+
+            }
+
+            function change(){
+                let username = document.getElementById('username').value;
+                if(username == ""){
+                    document.getElementById('msg').innerHTML = "please type username first!";
+                    document.getElementById('msg').style.color = 'red';
+                }else{
+                    let head = document.getElementsByTagName('h1')[0];
+                    head.innerHTML = username;
+                    document.getElementById('msg').innerHTML = "";
+                }
+                
+            }
+
+</script>
+</body>
+</html>
